@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BIBEK KUMAR BIDARI</title>
+  </head>
+  <body>
+    <header>
+      <section class="header-container" id="header-container">
+        <h1>BB</h1>
+        <section class="header-menu" onclick="openAside()">
+          <img src="./images/menu.svg" alt="menu" />
+        </section>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#about_me-container">About</a></li>
+            <li><a href="#skills-container">Skills</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <aside data-open="false">
+      <section class="aside-container">
+        <section class="aside-menu">
+          <h1>BB</h1>
+          <section onclick="closeAside()">
+            <img src="./images/close.svg" alt="menu" />
+          </section>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="#about_me-container">About</a></li>
+            <li><a href="#skills-container">Skills</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </aside>
+    <main>
+      <section class="main-container">
+        <section class="image-container">
+          <img src="./images/bibek.jpg"/ alt="my-image" class="my-image">
+        </section>
+        <section class="social_media-container">
+          <a href="https://www.facebook.com/bivek.bidari/" target="_blank">
+            <img
+              src="./images/facebook.png"
+              alt="facebook"
+              class="social_media-image"
+            />
+          </a>
+          <a href="https://www.instagram.com/_bibekbidari_/" target="_blank">
+            <img
+              src="./images/instagram.png"
+              alt="instagram"
+              class="social_media-image instagram"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bibek-kumar-bidari-391262227/"
+            target="_blank"
+          >
+            <img
+              src="./images/linkedin.png"
+              alt="linkedin"
+              class="social_media-image"
+            />
+          </a>
+          <a href="https://github.com/coder-Bibek" target="_blank">
+            <img
+              src="./images/github.png"
+              alt="github"
+              class="social_media-image"
+            />
+          </a>
+        </section>
+      </section>
+      <article>
+        <section id="about_me-container">
+          <h2>ABOUT ME</h2>
+          <p class="about_me-paragraph">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy.Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+          <section class="hobbies-container">
+            <h3>HOBBIES</h3>
+            <section class="hobbies-box">
+              <p class="hobby">READING</p>
+              <p class="hobby">CODING</p>
+              <p class="hobby">GAMING</p>
+              <p class="hobby">HIKING</p>
+            </section>
+          </section>
+        </section>
+        <section id="skills-container">
+          <h2>SKILLS</h2>
+
+          <section class="progress-section">
+            <section class="skills-section">
+              <p>HTML</p>
+              <section class="container">
+                <section class="skills html">90%</section>
+              </section>
+            </section>
+
+            <section class="skills-section">
+              <p>CSS</p>
+              <section class="container">
+                <section class="skills css">80%</section>
+              </section>
+            </section>
+
+            <section class="skills-section">
+              <p>JAVASCRIPT / TYPESCRIPT</p>
+              <section class="container">
+                <section class="skills js">75%</section>
+              </section>
+            </section>
+
+            <section class="skills-section">
+              <p>REACT</p>
+              <section class="container">
+                <section class="skills react">90%</section>
+              </section>
+            </section>
+
+            <section class="skills-section">
+              <p>NODEJS</p>
+              <section class="container">
+                <section class="skills node">90%</section>
+              </section>
+            </section>
+
+            <section class="skills-section">
+              <p>MYSQL</p>
+              <section class="container">
+                <section class="skills mysql">90%</section>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="projects-container">
+          <h2>PROJECTS</h2>
+          <section></section>
+        </section>
+      </article>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

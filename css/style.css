@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(78, 78, 78);
+  font-family: "Kdam Thmor Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* header starts here */
+
+header {
+  background-color: rgba(236, 239, 239, 0.8);
+  box-shadow: 0 0 0.2rem rgb(71, 71, 71);
+  line-height: 3.5rem;
+  height: 4rem;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header-menu {
+  margin-top: 0.75rem;
+}
+
+.header-container > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar > ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navbar > ul > li > a {
+  color: var(--color);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: 200ms all ease;
+}
+
+.navbar > ul > li > a:hover {
+  color: #000;
+}
+
+/* header ends here */
+
+/* aside starts here */
+
+aside {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  transform: translateX(-110%);
+  transition: 200ms all ease;
+  width: 100%;
+  z-index: 999;
+}
+
+aside[data-open="true"] {
+  transform: translateX(0%);
+}
+
+.aside-container {
+  margin: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.aside-menu > h1 {
+  font-size: 2.5rem;
+}
+
+.aside-container > nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.aside-container > nav > ul > li > a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.aside-container > nav > ul > li > a:hover {
+  color: #000;
+}
+
+/* aside ends here */
+
+/* main starts here */
+
+main {
+  height: 90vh;
+  position: relative;
+}
+
+.main-container {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.image-container {
+  background-color: rgb(153, 159, 159);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 20rem;
+}
+
+.my-image {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  width: 19rem;
+  height: 19rem;
+  border-radius: 19rem;
+}
+
+/* social media starts here */
+
+.social_media-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.social_media-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 200ms all ease;
+}
+
+.social_media-container > a:nth-child(1),
+.social_media-container > a:nth-child(4) {
+  margin-bottom: 0.25rem;
+}
+
+.instagram {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.social_media-image:hover {
+  opacity: 1;
+}
+
+/* social media ends here */
+
+/* about me starts here */
+article {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 100%;
+}
+
+#about_me-container > h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.about_me-paragraph {
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.hobbies-container {
+  margin-top: 1rem;
+}
+
+.hobbies-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.hobby {
+  border: 1px solid;
+  padding: 0.5rem;
+  width: 8rem;
+  background-color: #000;
+  color: #fff;
+}
+
+/* about ends here */
+
+#skills-container {
+  margin-top: 3rem;
+}
+
+#skills-container > h2 {
+  font-size: 2rem;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  width: 20rem;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.skills-section {
+  margin-top: 1rem;
+}
+
+.html {
+  width: 90%;
+  background-color: #aa6204;
+}
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+.js {
+  width: 75%;
+  background-color: #f44336;
+}
+.react {
+  width: 90%;
+  background-color: #0a1c8e;
+}
+.node {
+  width: 90%;
+  background-color: #035118;
+}
+.mysql {
+  width: 90%;
+  background-color: #f9a20c;
+}
+
+/* skills ends here */
+
+.projects-container {
+  margin-top: 4rem;
+}
+
+.projects-container > h2 {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-container > h1 {
+    margin-bottom: 0rem;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .main-container {
+    transform: translate(-50%, -48%);
+  }
+
+  .image-container {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30rem;
+  }
+
+  .my-image {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 29rem;
+    height: 29rem;
+    border-radius: 29rem;
+  }
+
+  artticle {
+    top: 95%;
+  }
+
+  #about_me-container > h2 {
+    font-size: 2.5rem;
+  }
+
+  .about_me-paragraph {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  #skills-container > h2 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    width: 35rem;
+  }
+
+  .projects-container > h2 {
+    font-size: 2.5rem;
+  }
+}
