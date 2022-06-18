@@ -129,19 +129,19 @@ main {
 }
 
 .image-container {
-  background-color: rgb(153, 159, 159);
+  background-color: rgb(255, 255, 255);
   width: 20rem;
   height: 20rem;
+  border:10px solid  rgb(153, 159, 159);
   border-radius: 20rem;
 }
 
 .my-image {
-  margin-top: 0.5rem;
+  margin-top: 1.15rem;
   margin-left: 0.5rem;
   width: 19rem;
   height: 19rem;
   border-radius: 19rem;
-  object-fit: fill;
 }
 
 /* social media starts here */
@@ -345,7 +345,7 @@ article {
   }
 
   .my-image {
-    margin-top: 0.5rem;
+    margin-top: 1.15rem;
     margin-left: 0.5rem;
     width: 29rem;
     height: 29rem;
