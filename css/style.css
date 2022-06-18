@@ -31,7 +31,11 @@ header {
   margin-top: 0.75rem;
 }
 
-.header-container > h1 {
+.header-container > a {
+  text-decoration: none;
+}
+
+.header-container > a > h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -92,7 +96,11 @@ aside[data-open="true"] {
   margin-bottom: 2rem;
 }
 
-.aside-menu > h1 {
+.aside-menu > a {
+  text-decoration: none;
+}
+
+.aside-menu > a > h1 {
   font-size: 2.5rem;
 }
 
@@ -398,6 +406,7 @@ article {
   width: 8rem;
 }
 
+/* contact ends here */
 .spare {
   margin-top: 1rem;
 }
@@ -436,8 +445,8 @@ article {
     width: 29rem;
   }
 
-  artticle {
-    top: 95%;
+  article {
+    top: 100%;
   }
 
   #about_me-container > h2 {
