@@ -132,7 +132,7 @@ main {
   background-color: rgb(255, 255, 255);
   width: 20rem;
   height: 20rem;
-  border:10px solid  rgb(153, 159, 159);
+  border: 10px solid rgb(153, 159, 159);
   border-radius: 20rem;
 }
 
@@ -276,10 +276,9 @@ article {
 .css.active,
 .html.active,
 .js.active,
-.mysql.active, 
+.mysql.active,
 .node.active,
-.react.active
-{
+.react.active {
   animation-name: slider;
   animation-duration: 3s;
 }
@@ -370,6 +369,38 @@ article {
   font-size: 2rem;
 }
 
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-mediums {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.contact-mediums > a {
+  text-decoration: none;
+}
+
+.contact {
+  background-color: #000;
+  border: 1px solid;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 8rem;
+}
+
+.spare {
+  margin-top: 1rem;
+}
 @media only screen and (min-width: 576px) {
   .header-menu {
     display: none;
