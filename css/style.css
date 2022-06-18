@@ -141,6 +141,7 @@ main {
   width: 19rem;
   height: 19rem;
   border-radius: 19rem;
+  object-fit: fill;
 }
 
 /* social media starts here */
@@ -222,6 +223,7 @@ article {
 /* about ends here */
 
 #skills-container {
+  position: relative;
   margin-top: 3rem;
 }
 
@@ -235,11 +237,25 @@ article {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  transform: translateY(3rem);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.progress-section.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .container {
   width: 20rem;
   background-color: #ddd;
+}
+
+@keyframes slider {
+  0% {
+    width: 25%;
+  }
 }
 
 .skills {
@@ -256,10 +272,23 @@ article {
   width: 90%;
   background-color: #aa6204;
 }
+
+.css.active,
+.html.active,
+.js.active,
+.mysql.active, 
+.node.active,
+.react.active
+{
+  animation-name: slider;
+  animation-duration: 3s;
+}
+
 .css {
   width: 80%;
   background-color: #2196f3;
 }
+
 .js {
   width: 75%;
   background-color: #f44336;
@@ -281,6 +310,7 @@ article {
 
 .projects-container {
   margin-top: 4rem;
+  position: relative;
 }
 
 .projects-container > h2 {
