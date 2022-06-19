@@ -215,6 +215,7 @@ article {
   margin: 0 auto;
   position: relative;
   top: 100%;
+  transform: translate(0%, 2%);
 }
 
 #about_me-container > h2 {
